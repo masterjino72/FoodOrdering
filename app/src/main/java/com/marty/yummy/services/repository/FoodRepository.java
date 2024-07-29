@@ -51,9 +51,6 @@ public class FoodRepository {
     public static FoodRepository getInstance() {
         if(instance == null){
             synchronized (FoodRepository.class){
-                if(instance == null){
-                    instance = new FoodRepository();
-                }
             }
         }
         return instance;
